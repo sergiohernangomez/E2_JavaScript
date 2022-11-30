@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,400;1,600;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #c3a995; 
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10PX;
+}
+.titulo{
+    color: #6F5E53;
+    font-weight: 800;
+
+}
+#number {
+    padding: 6px 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+#button{ 
+    border-radius: 10px;
+    background-color: #cfdbd5;
+
+}
+.contenedor-input{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.render_contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    width: 450px;
+    background-color: #6F5E53;
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+
+.pizza_imagen{
+    height: 180px;
+    width: 260px;
+}
+.render_nombre{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.render_ingredientes{
+    display: flex;
+    font-weight: 600;
+    flex-direction: column;
+    color: #C3A995;
+}
+
+.render_precio{
+    font-weight: 600;
+}
+.render_precio span{
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+
