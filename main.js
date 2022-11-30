@@ -86,13 +86,13 @@ const getPizzaHtml = render=> {
     <div>`
 };
 
-
+function recargar  () {
+    const devolver = JSON.parse(localStorage.getItem("pizza")) || [];
+    const devolverHtml = devolver.map(render => getPizzaHtml(render)).join(``)
+    contenedor.innerHTML = devolverHtml;}
 
  function init () {
-    const devolver = JSON.parse(localStorage.getItem("pizza")); 
-    const devolverHtml = devolver.map(render => getPizzaHtml(render)).join(``)
-    contenedor.innerHTML = devolverHtml;
-
+    recargar  ()    
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         if (isEmpty(number.value)){
@@ -112,5 +112,5 @@ const getPizzaHtml = render=> {
         }
      })
  }
-
+ 
  init()
